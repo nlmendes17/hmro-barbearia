@@ -4,78 +4,39 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>HMRO BARBEARIA</title>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet"/>
-  <style>
-    * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-    body {{
-      font-family: 'Oswald', sans-serif;
-      color: #fff;
-      background: url('https://images.unsplash.com/photo-1606577849014-b3a60e482bc0') no-repeat center center/cover;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }}
-    h1 {{ font-size: 3rem; margin-bottom: 1rem; text-shadow: 2px 2px 5px #000; }}
-    p {{ font-size: 1.2rem; margin-bottom: 2rem; text-shadow: 1px 1px 3px #000; }}
-    .btn {{
-      background: #25d366;
-      color: white;
-      padding: 1rem 2rem;
-      font-size: 1rem;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      text-decoration: none;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-      transition: 0.3s ease;
-    }}
-    .btn:hover {{ background: #1ebc5a; }}
-    .map-container {{
-      margin-top: 3rem;
-      width: 90%;
-      max-width: 600px;
-      border: 4px solid white;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 0 10px rgba(0,0,0,0.4);
-    }}
-    .instagram {{
-      margin-top: 2rem;
-      font-size: 1rem;
-      color: #f5f5f5;
-    }}
-    footer {{
-      margin-top: auto;
-      padding: 1rem 0;
-      font-size: 0.9rem;
-      color: #ccc;
-      text-shadow: 1px 1px 2px #000;
-    }}
-    @media (max-width: 600px) {{
-      h1 {{ font-size: 2rem; }}
-      p {{ font-size: 1rem; }}
-    }}
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>HMRO BARBEARIA</h1>
-  <p>Estilo, tradição e atitude.</p>
-  <a class="btn" href="https://wa.me/5541996910927?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio" target="_blank">Agendar Horário no WhatsApp</a>
+  <header>
+    <div class="container">
+      <h1>HMRO</h1>
+      <nav>
+        <a href="#home">Início</a>
+        <a href="https://www.instagram.com/hmrobarbershop" target="_blank">Instagram</a>
+        <a href="#agendar">Agendar</a>
+        <a href="#local">Localização</a>
+      </nav>
+    </div>
+  </header>
 
-  <div class="instagram">
-    <p>Nos siga no Instagram: <a href="https://www.instagram.com/hmrobarbershop" target="_blank" style="color: #fff; text-decoration: underline;">@hmrobarbershop</a></p>
-  </div>
+  <section id="home" class="hero">
+    <div class="overlay"></div>
+    <div class="content">
+      <h2>Estilo, Tradição e Atitude</h2>
+      <a class="btn" href="https://wa.me/5541996910927?text=Ol%C3%A1%2C%20tudo%20bem%3F%20Vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio" target="_blank">Agendar no WhatsApp</a>
+    </div>
+  </section>
 
-  <div class="map-container">
-    <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.268314223005!2d-49.22470282377598!3d-25.38155273138708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce6be0a1e2f91%3A0x2d4d44db1f7305ee!2sR.%20David%20Bodziak%2C%20859%20-%20Abranches%2C%20Curitiba%20-%20PR%2C%2082710-260%2C%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1721767997360!5m2!1spt-BR!2sbr" 
-      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-  </div>
+  <section id="local" class="map-section">
+    <h3>Nosso Endereço</h3>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.268314223005!2d-49.22470282377598!3d-25.38155273138708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce6be0a1e2f91%3A0x2d4d44db1f7305ee!2sR.%20David%20Bodziak%2C%20859%20-%20Abranches%2C%20Curitiba%20-%20PR%2C%2082710-260%2C%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1721767997360!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
 
-  <footer>© 2025 HMRO Barbearia</footer>
+  <footer>
+    <p>© 2025 HMRO Barbearia</p>
+  </footer>
 </body>
 </html>
