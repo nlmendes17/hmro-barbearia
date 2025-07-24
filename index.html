@@ -11,6 +11,7 @@
       font-family: 'Segoe UI', sans-serif;
       background-color: #121212;
       color: #fff;
+      scroll-behavior: smooth;
     }
     header {
       background-color: #1c1c1c;
@@ -18,6 +19,10 @@
       text-align: center;
       font-size: 2rem;
       font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      text-align: center;
     }
     .swiper {
       width: 100%;
@@ -42,6 +47,33 @@
     .swiper-button-next, .swiper-button-prev {
       color: #fff;
     }
+    .mapa iframe {
+      width: 100%;
+      height: 400px;
+      border: 0;
+      border-radius: 10px;
+    }
+    .btn-agendar {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 30px;
+      background-color: #00e676;
+      color: #000;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    a.instagram {
+      display: inline-block;
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #fff;
+      background: #C13584;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
@@ -49,6 +81,7 @@
 <header>Barbearia HMRO</header>
 
 <section id="galeria">
+  <h2>Nossa Barbearia</h2>
   <div class="swiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide"><img src="2d1c92eb-684d-4edd-8562-0ac6a46c9523.jpg" alt="Foto 1"></div>
@@ -65,6 +98,28 @@
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
   </div>
+</section>
+
+<section id="instagram">
+  <h2>Nosso Instagram</h2>
+  <a class="instagram" href="https://www.instagram.com/hmrobarbershop" target="_blank">
+    Seguir @hmrobarbershop
+  </a>
+</section>
+
+<section id="mapa" class="mapa">
+  <h2>Como chegar</h2>
+  <iframe src="https://www.google.com/maps?q=Rua+David+Bodziak,+859,+Curitiba,+PR,+82710-260,+Brasil&output=embed"
+    allowfullscreen=""
+    loading="lazy">
+  </iframe>
+</section>
+
+<section id="agendar">
+  <h2>Agende seu horário</h2>
+  <a class="btn-agendar" href="https://wa.me/5541996910927?text=Reservei%20um%20hor%C3%A1rio%20pelo%20site%2C%20logo%20estou%20a%C3%AD" target="_blank">
+    Agendar no WhatsApp
+  </a>
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
