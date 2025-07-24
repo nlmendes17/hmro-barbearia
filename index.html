@@ -1,127 +1,90 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Barbearia HMRO</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #121212;
-            color: #fff;
-        }
-        header {
-            background-color: #1c1c1c;
-            padding: 20px 0;
-            text-align: center;
-            font-size: 2rem;
-            font-weight: bold;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            background-color: #2a2a2a;
-            padding: 15px 0;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #bbbbbb;
-        }
-        section {
-            padding: 40px 20px;
-            text-align: center;
-        }
-        .galeria {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        .galeria img {
-            width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.6);
-            transition: transform 0.3s ease;
-        }
-        .galeria img:hover {
-            transform: scale(1.05);
-        }
-        .mapa iframe {
-            width: 100%;
-            height: 400px;
-            border: 0;
-        }
-        .btn-agendar {
-            display: inline-block;
-            margin-top: 40px;
-            padding: 15px 30px;
-            background-color: #00e676;
-            color: #000;
-            font-size: 1.2rem;
-            border: none;
-            border-radius: 8px;
-            text-decoration: none;
-        }
-        footer {
-            background-color: #1c1c1c;
-            text-align: center;
-            padding: 20px;
-            font-size: 0.9rem;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Barbearia HMRO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #fff;
+    }
+    header {
+      background-color: #1c1c1c;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .swiper {
+      width: 100%;
+      height: 80vh;
+    }
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #000;
+    }
+    .swiper-slide img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 10px;
+      max-height: 100%;
+    }
+    .swiper-pagination-bullet {
+      background: #fff;
+    }
+    .swiper-button-next, .swiper-button-prev {
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
 
-    <header>Barbearia HMRO</header>
+<header>Barbearia HMRO</header>
 
-    <nav>
-        <a href="#galeria">Nossa Barbearia</a>
-        <a href="https://www.instagram.com/hmrobarbershop" target="_blank">Instagram</a>
-        <a href="#mapa">Localização</a>
-        <a href="#agendar">Agendar</a>
-    </nav>
+<section id="galeria">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="2d1c92eb-684d-4edd-8562-0ac6a46c9523.jpg" alt="Foto 1"></div>
+      <div class="swiper-slide"><img src="0479b88d-2a2d-4548-b083-58b7a4dbd64d.jpg" alt="Foto 2"></div>
+      <div class="swiper-slide"><img src="0841f9f2-3e4c-45e5-ba2c-79399cb3879d.jpg" alt="Foto 3"></div>
+      <div class="swiper-slide"><img src="6716ac61-a66d-4896-9ab6-ae4f6b52b227.jpg" alt="Foto 4"></div>
+      <div class="swiper-slide"><img src="7278b4e1-b60d-40c9-8208-2d303a358999.jpg" alt="Foto 5"></div>
+      <div class="swiper-slide"><img src="03788737-fef6-4596-a1a2-64fc4acc4728.jpg" alt="Foto 6"></div>
+      <div class="swiper-slide"><img src="ab667deb-40b8-4f88-bd83-b334a86bf5aa.jpg" alt="Foto 7"></div>
+      <div class="swiper-slide"><img src="b86c1855-3fed-4b14-9d16-670dfca59e95.jpg" alt="Foto 8"></div>
+      <div class="swiper-slide"><img src="c7923fef-aadd-4885-8905-09608e2a3e2d.jpg" alt="Foto 9"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
 
-    <section id="galeria">
-        <h2>Nossa Barbearia</h2>
-        <div class="galeria">
-            <img src="7278b4e1-b60d-40c9-8208-2d303a358999.jpg" alt="Imagem da barbearia">
-            <img src="03788737-fef6-4596-a1a2-64fc4acc4728.jpg" alt="Imagem da barbearia">
-            <img src="ab667deb-40b8-4f88-bd83-b334a86bf5aa.jpg" alt="Imagem da barbearia">
-            <img src="b86c1855-3fed-4b14-9d16-670dfca59e95.jpg" alt="Imagem da barbearia">
-            <img src="c7923fef-aadd-4885-8905-09608e2a3e2d.jpg" alt="Imagem da barbearia">
-            <img src="2d1c92eb-684d-4edd-8562-0ac6a46c9523.jpg" alt="Imagem da barbearia">
-            <img src="0479b88d-2a2d-4548-b083-58b7a4dbd64d.jpg" alt="Imagem da barbearia">
-            <img src="0841f9f2-3e4c-45e5-ba2c-79399cb3879d.jpg" alt="Imagem da barbearia">
-            <img src="6716ac61-a66d-4896-9ab6-ae4f6b52b227.jpg" alt="Imagem da barbearia">
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
 
-        </div>
-    </section>
-
-    <section id="mapa" class="mapa">
-        <h2>Como chegar:</h2>
-        <iframe 
-            src="https://www.google.com/maps?q=Rua+David+Bodziak,+859,+Curitiba,+PR,+82710-260,+Brasil&output=embed"
-            allowfullscreen=""
-            loading="lazy">
-        </iframe>
-    </section>
-
-    <section id="agendar">
-        <h2>Agende seu horário</h2>
-        <a class="btn-agendar" href="https://wa.me/5541996910927?text=Ol%C3%A1%2C+tudo+bem%3F+Vim+atrav%C3%A9s+do+site+e+gostaria+de+agendar+um+hor%C3%A1rio" target="_blank">
-            Agendar no WhatsApp
-        </a>
-    </section>
-
-    <footer>
-        &copy; 2025 Barbearia HMRO - Todos os direitos reservados.
-    </footer>
 </body>
 </html>
